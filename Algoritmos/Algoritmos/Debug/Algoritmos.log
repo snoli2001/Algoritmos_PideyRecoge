@@ -1,3 +1,4 @@
 ﻿  Source.cpp
 C:\Users\NOLI\Source\Repos\Algoritmos_PideyRecoge\Algoritmos\Algoritmos\Source.cpp(6,1): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+  LINK : no se encontró C:\Users\NOLI\Source\Repos\Algoritmos_PideyRecoge\Algoritmos\Debug\Algoritmos.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   Algoritmos.vcxproj -> C:\Users\NOLI\Source\Repos\Algoritmos_PideyRecoge\Algoritmos\Debug\Algoritmos.exe

@@ -141,7 +141,6 @@
     <ClInclude Include="Alimento.h" />
     <ClInclude Include="ColaCompras.h" />
     <ClInclude Include="ListaAlimentos.h" />
-    <ClInclude Include="ListaCompras.h" />
     <ClInclude Include="Nodo.h" />
   </ItemGroup>
   <ItemGroup>
