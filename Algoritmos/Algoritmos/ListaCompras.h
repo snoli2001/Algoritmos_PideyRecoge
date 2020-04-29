@@ -9,7 +9,7 @@ private:
 	Nodo<T>* inicio;
 	int longitud;
 public:
-	Lista() { inicio = NULL; };
+	Lista() { inicio = NULL; longitud = 0};
 	~Lista() {};
 	void AgregaralInicio(T v);
 	void AgregaralFinal(T v);

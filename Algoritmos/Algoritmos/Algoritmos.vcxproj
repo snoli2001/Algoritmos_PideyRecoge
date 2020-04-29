@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ColaCompras.h" />
     <ClInclude Include="ListaCompras.h" />
     <ClInclude Include="Nodo.h" />
   </ItemGroup>
