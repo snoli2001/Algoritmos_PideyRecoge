@@ -32,9 +32,9 @@ T Cola<T>::Desencolar() {
 	{
 		aux = aux->siguiente;
 	}
-	T temp = tail->valor;
+	T temp = head->valor;
 	delete aux->siguiente;
-	tail = aux;
+	head = aux;
 	return temp;
 
 }
