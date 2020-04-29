@@ -1,6 +1,8 @@
 #pragma once
 #include "Nodo.h"
-
+#include <algorithm>
+#include <functional>
+using namespace std;
 template<typename T>
 class Cola
 {
@@ -13,16 +15,22 @@ public:
 	~Cola() {
 
 	}
-	void Encolar(T v);
+	bool Encolar(T v, function<bool(T)>comprobador);
 	T Desencolar();
 	int Size():
 };
 
 template<typename T>
-void  Cola<T>::Encolar(T v) {
-	Nodo<T>* nuevo = new Nodo<T>(v);
-	nuevo->siguiente = tail;
-	tail = nuevo;
+bool  Cola<T>::Encolar(T v, function<bool(T)>comprobador) {
+	if (comprobador) {
+		Nodo<T>* nuevo = new Nodo<T>(v);
+		nuevo->siguiente = tail;
+		tail = nuevo;
+		lenght++;
+		return true;
+	}
+	return false;
+	
 }
 
 template<typename T>
@@ -35,8 +43,10 @@ T Cola<T>::Desencolar() {
 	T temp = head->valor;
 	delete aux->siguiente;
 	head = aux;
+	lenght--;
 	return temp;
 
 }
 template<typename T>
 int Cola<T>::Size() { return lenght; }
+
