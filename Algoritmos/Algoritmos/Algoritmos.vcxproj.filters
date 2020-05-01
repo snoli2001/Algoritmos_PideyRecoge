@@ -18,9 +18,6 @@
     <ClInclude Include="Nodo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ListaCompras.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="ColaCompras.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
